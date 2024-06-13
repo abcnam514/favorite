@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #style-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        img {   
+            width: 300px;
+            object-fit: cover;
+        }
+
+        #style-container img {
+            width: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease; 
+        }
+
+        #style-container img:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul>
+                <li><a href="music.html">Music</a></li>
+                <li style="color: white;"><a href="style.html">Style</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="cat.html">Cat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">ᰔ Favorite Style ᰔ</h1><br>
+    <h3 style="text-align: center; color: #1400ab;">Classic | Vintage | Casual | Hip | Lovely</h3>
+
+    <div id="style-container">
+        <img src="img/s1.jpg">
+        <img src="img/s2.jpg">
+        <img src="img/s3.jpg">
+        <img src="img/s4.jpg">
+        <img src="img/s5.jpg">
+    </div>
+<br>
+    <footer>
+        <div class="footer">
+            <b>Web Publisher</b><br>
+            <br>
+            copyright 2023 Ryoon 서울시 강동구 css city<br>
+            사업자등록번호 024-06-140900 전화 010-0000-0000
+        </div>
+        <div class="footer2">
+            <a href="#"><img src="img/n.png"></a>
+            <a href="#"><img src="img/b.png"></a>
+            <a href="#"><img src="img/f.png"></a>
+        </div>
+        
+    </footer>
+</body>
+</html>

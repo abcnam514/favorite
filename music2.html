@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+   
+}
+
+.left-panel {
+        width: 20%;
+            height: 100%;
+            background-color: #c2c0f0;
+            border-radius: 50px;
+            margin: 230px 60px 0 60px;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: auto;
+            font-size: larger;
+}
+
+.center-panel {
+            position: relative;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-panel img {
+            max-width: 100%;
+        }
+
+        .center-panel .video {
+            position: absolute;
+            right: 43%;
+        }
+        .video video {
+            width: 560px;
+            height: 315px;
+        }       
+        
+        .right-panel {
+            width: 300px;
+            background-color: #c2c0f0;
+            margin: 30px 60px 0 60px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+.lyric-box {
+    font-family: 'ふんわりうさぎフォント';
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    height: 300px; 
+    overflow: auto; 
+}
+footer {
+            width: 100%;
+            background-color: #2e266d;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer2 {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer2 img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul>
+                <li style="color: white;"><a href="music.html">Music</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="cat.html">Cat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-panel">
+            <h2>Song List ♪</h2>
+            <ul>
+                <a href="music.html"><li>wish you well - WENDY</li></a><br>
+                <a href="music2.html"><li style="background-color: #8a87dc;">愛とか恋とか - Novelbright</li></a><br>
+                <a href="music3.html"><li>Bubble Gum - NewJeans</li></a>
+               
+                
+            </ul>
+        </div>
+        <div class="center-panel">
+            <img src="img/musicplayer.jpg" alt="Playlist Image" style="width: 800px; margin-left: auto; margin-right: auto; display: block;">
+            <div class="video">
+                <video src="img/aicoi.mp4" controls></video>
+            </div>
+        
+        <div class="right-panel">
+            <h2>Lyrics ✎⁾⁾⁾</h2>
+            <div class="lyric-box">
+                月曜日の朝 憂鬱な気持ちも 君と会う日を思い浮かべれば<br>
+                いつもの道に優しい風が吹き 心弾ませ今日が始まるよ<br><br>
+                昔は聴かなかったあの歌や 映画や香水の匂いでさえも<br>
+                君が好きなものってだけでさ どうして僕も好きなんだろう<br><br>
+                こんなにも<br>
+                愛とか恋とかの言葉で片付けられないくらいの<br>
+                『愛してる』が溢れ出して 止まらない想い<br>
+                君も同じかな 伝えよう目を見て 今すぐ走った<br>
+                離れないように 離さないから 抱きしめたいよずっと<br><br>
+                会えない時は思い出をめくって 近くに君を感じて励まされ<br>
+                携帯に映る君からの通知を 開く時間に笑顔になれるよ<br><br>
+                僕の腕で君が眠る夜も 夢でもいつでも君と過ごしてた<br>
+                目が覚めても夢は醒めないまま 心が君で満ちていく<br>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <b>Web Publisher</b><br>
+            <br>
+            copyright 2023 Ryoon 서울시 강동구 css city<br>
+            사업자등록번호 024-06-140900 전화 010-0000-0000
+        </div>
+        <div class="footer2">
+            <a href="#"><img src="img/n.png"></a>
+            <a href="#"><img src="img/b.png"></a>
+            <a href="#"><img src="img/f.png"></a>
+        </div>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+         main {
+            display: flex;
+            justify-content: center; 
+            padding: 20px;
+        }
+
+        aside {
+            width: 100px;
+            padding: 10px;
+        }
+
+        .book-menu {
+            margin-top: 150%;
+            margin-left: 20%;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .book-menu img {
+            width: 35px;
+            border: solid 1px #a0aadb;
+            border-radius: 6px;
+        }
+
+        .book-menu li {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .highlight-icon {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* 그림자 효과 */
+            animation: glow 1.5s infinite alternate; /* 빛나는 애니메이션 */
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px rgba(0, 26, 255, 0.5);
+            }
+            to {
+                box-shadow: 0 0 20px rgb(0, 8, 255);
+            }
+        }
+
+
+        .book-content {
+            flex-grow: 1;
+            max-width: 1500px; 
+            display : block;
+            margin-top: 5%;
+            margin-left : 25%;
+
+        }
+
+        .book-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .book-info img {
+            max-width: 300px;
+            margin-right: 40px;
+        }
+
+        .book-details h2 {
+            margin-top: 0;
+        }
+
+        .buy-button {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .buy-button:hover {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #1c681e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #2e266d;
+            margin-bottom: -60px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer2 {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer2 img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li style="color: white;"><a href="book.html">Book</a></li>
+                <li><a href="cat.html">Cat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Recommend BOOKs ! ◡̈⋆*</h1>
+    <main>
+        
+        <aside>
+            <ul class="book-menu">
+                <li><a href="book.html"><img src="img/book-icon1.png" alt="Book Icon"></a></li>
+                <li><a href="book2.html"><img src="img/book-icon2.png" alt="Book Icon"></a></li>
+                <li><a href="book3.html"><img src="img/book-icon3.png" alt="Book Icon"></a></li>
+                <li><a href="book4.html"><img src="img/book-icon4.png" alt="Book Icon"class="highlight-icon"></a></li>
+            </ul>
+        </aside>
+
+        <section class="book-content">
+            <div class="book-info">
+                <img src="img/book4.jpg" alt="Book Cover" style="border: solid 1px #a0aadb;">
+                <div class="book-details">
+                    <h2>책 제목 : 아우라</h2>
+                    <p>카를로스 푸엔테스 저자(글) </p>
+                    <p style="color: #6772ab;">욕망에 휩쓸려 스스로 광기를 선택한 사람들!<br>
+                        작가가 쓴 환상소설 중에서도 가장 아름다운 작품으로 꼽히는 이 소설은 <br>
+                        인생의 가장 찬란했던 순간을 영원히 간직하려는 한 여인의 집요한 욕망을 그리고 있다. 
+                        </p><br>
+                    <p>추천 정도 : ★★★★★
+                    </p>
+                    <a href="https://product.kyobobook.co.kr/detail/S000000620366"><button class="buy-button">Buy</button></a>
+                </div>
+            </div>
+            <!-- 여기에 다른 책 정보 추가 -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <b>Web Publisher</b><br>
+            <br>
+            copyright 2023 Ryoon 서울시 강동구 css city<br>
+            사업자등록번호 024-06-140900 전화 010-0000-0000
+        </div>
+        <div class="footer2">
+            <a href="#"><img src="img/n.png"></a>
+            <a href="#"><img src="img/b.png"></a>
+            <a href="#"><img src="img/f.png"></a>
+        </div>
+        
+    </footer>
+</body>
+</html>
